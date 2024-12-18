@@ -1,11 +1,14 @@
 import './App.css'
-import Dashboard from './pages/dashboard'
+import { AuthProvider } from './context/AuthContext'
+import AppRoutes from './router/Routes'
 
 function App() {
 
   return (
     <>
-      <Dashboard />
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
     </>
   )
 }

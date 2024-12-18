@@ -15,6 +15,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/toaster";
 import { useEffect, useState } from "react";
 
 // Fetch data function
@@ -69,6 +70,7 @@ export default function Dashboard() {
             <DataTable data={data} columns={columns} />
           </div>
         </div>
+        <Toaster/>
       </SidebarInset>
     </SidebarProvider>
   );
