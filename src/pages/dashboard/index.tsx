@@ -70,7 +70,7 @@ export default function Dashboard() {
             <DataTable data={data} columns={columns} />
           </div>
         </div>
-        <Toaster/>
+        <Toaster />
       </SidebarInset>
     </SidebarProvider>
   );
